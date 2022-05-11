@@ -1,0 +1,24 @@
+CREATE TABLE movies (
+  id               SERIAL PRIMARY KEY,
+  title            TEXT NOT NULL,
+  lead_actor       TEXT,
+  lead_actress       TEXT,
+  year_released    INT,
+  director_name            TEXT
+);
+INSERT INTO movies (title,  lead_actor, lead_actress,year_released, director_name)
+VALUES ('Spiderman', 'Tom Holland','Zendaya',2022,'Marvel');
+
+INSERT INTO movies (title,  lead_actor, lead_actress,year_released, director_name)
+VALUES ('Pirates of the Caribbean: The Curse of the Black Pearl', 'Gore Verbinski','Amanda' ,2003, 'Gore Verbinski ');
+
+INSERT INTO movies (title,  lead_actor, lead_actress,year_released, director_name)
+VALUES ('Harry Potter and Goblet of Fire', 'Mike Newell','Emma watson' ,2005, 'Alfanso cuaren');
+
+INSERT INTO movies (title,  lead_actor, lead_actress,year_released, director_name)
+VALUES ('The Hobbit: An Unexpected Journey', 'Peter Jackson','No heroine',2012, 'peter Jackson');
+
+INSERT INTO movies (title,  lead_actor, lead_actress,year_released, director_name)
+VALUES ('The Hobbit: The Desolation of Smaug', 'Peter Jackson','No heroine', 2013, 'fantasy');
+select *from movies
+where lead_actor='Mike Newell'
